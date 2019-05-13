@@ -9,5 +9,8 @@
         <module name="zuoriweilai" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zuoriweilai" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
