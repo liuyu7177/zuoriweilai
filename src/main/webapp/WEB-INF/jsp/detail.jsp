@@ -53,7 +53,7 @@
 <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
 <%--<script src="${pageContext.request.contextPath}/resources/script/seckill.js?<%=System.currentTimeMillis()%>1.0" type="text/javascript"></script>--%>
-<script src="${pageContext.request.contextPath}/resources/script/seckill.js?1.2" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/seckill.js?1.2" type="text/javascript"></script>
 <script type="text/javascript">
     $(function () {
         seckill.detail.init({

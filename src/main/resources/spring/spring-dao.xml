@@ -62,14 +62,14 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSourceA"/>
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
-        <property name="typeAliasesPackage" value="com.liuyu7177.seckill.entity"/>
+        <property name="typeAliasesPackage" value="com.liuyu7177.zuoriweilai.model.entity"/>
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <property name="basePackage" value="com.liuyu7177.seckill.dao"/>
+        <property name="basePackage" value="com.liuyu7177.zuoriweilai.dao"/>
     </bean>
-    <bean id="redisDao" class="com.liuyu7177.seckill.dao.cache.RedisDao">
+    <bean id="redisDao" class="com.liuyu7177.zuoriweilai.dao.cache.RedisDao">
         <constructor-arg index="0" value="127.0.0.1" />
         <constructor-arg index="1" value="6379"/>
     </bean>
