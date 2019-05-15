@@ -3,13 +3,13 @@ package com.liuyu7177.zuoriweilai.web;
 
 import com.liuyu7177.zuoriweilai.framework.exceptions.RepeatKillException;
 import com.liuyu7177.zuoriweilai.framework.exceptions.SeckillCloseException;
+import com.liuyu7177.zuoriweilai.framework.web.JsonResult;
 import com.liuyu7177.zuoriweilai.model.dto.Exposer;
 import com.liuyu7177.zuoriweilai.model.dto.SeckillExecution;
-import com.liuyu7177.zuoriweilai.model.dto.SeckillResult;
 import com.liuyu7177.zuoriweilai.model.entity.Seckill;
 import com.liuyu7177.zuoriweilai.model.enums.SeckillStateEnum;
 import com.liuyu7177.zuoriweilai.service.SeckillService;
-import com.liuyu7177.zuoriweilai.web.AppCode.JsonBaseController;
+import com.liuyu7177.zuoriweilai.web.baseCode.JsonBaseController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,7 +52,7 @@ public class SeckillController extends JsonBaseController {
 
     @RequestMapping(value = "/{seckillId}/exposer", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public SeckillResult<Exposer> exposer(@PathVariable("seckillId") Long seckillId) {
+    public JsonResult<Exposer> exposer(@PathVariable("seckillId") Long seckillId) {
         try {
             Exposer exposer = seckillService.exportSeckillUrl(seckillId);
             return ApiSuccess(exposer);
@@ -64,7 +64,7 @@ public class SeckillController extends JsonBaseController {
 
     @ResponseBody
     @RequestMapping(value = "/{seckillId}/{md5}/execution", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
-    public SeckillResult<SeckillExecution> execute(@PathVariable("seckillId") Long seckillId,
+    public JsonResult<SeckillExecution> execute(@PathVariable("seckillId") Long seckillId,
                                                    @PathVariable("md5") String md5,
                                                    @CookieValue(value = "killPhone", required = false) Long phone) {
         if (phone == null) {
@@ -90,7 +90,7 @@ public class SeckillController extends JsonBaseController {
 
     @RequestMapping(value = "/time/now", method = RequestMethod.GET)
     @ResponseBody
-    public SeckillResult<Long> time() {
+    public JsonResult<Long> time() {
         Date now = new Date();
         return ApiSuccess(now.getTime());
     }

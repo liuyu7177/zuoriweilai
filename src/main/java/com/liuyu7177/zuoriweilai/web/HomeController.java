@@ -25,6 +25,7 @@ public class HomeController {
     public String list(Model model) {
         List<Seckill> list = seckillService.getSeckillList();
         model.addAttribute("list", list);
+        System.out.println(model.getClass());
         return "list";
     }
 }
