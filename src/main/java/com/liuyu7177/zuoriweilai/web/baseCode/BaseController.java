@@ -39,7 +39,7 @@ public class BaseController {
     /**
      * ModelAndView 实体对象
      */
-    private ModelAndView mv;
+    public ModelAndView mv;
 
     private HttpServletRequest request;
 

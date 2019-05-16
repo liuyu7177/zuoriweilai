@@ -1,10 +1,9 @@
 package com.liuyu7177.zuoriweilai.web.springMvcDemo;
 
 import com.liuyu7177.zuoriweilai.web.baseCode.JsonBaseController;
+import com.liuyu7177.zuoriweilai.web.springMvcDemo.model.RoleModel;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -25,4 +24,42 @@ public class SpringMvcParamsController extends JsonBaseController {
         return View();
     }
 
+    @RequestMapping(value = "/addRole", method = RequestMethod.POST)
+    public ModelAndView addRole(String roleName, String roleNote) {
+        mv.addObject("roleName", roleName);
+        mv.addObject("roleNote",roleNote);
+        return View();
+    }
+
+    @RequestMapping(value = "/addRoleForPojo", method = RequestMethod.GET)
+    public ModelAndView addRoleForPojo() {
+        return View();
+    }
+
+    @RequestMapping(value = "/addRoleForPojo", method = RequestMethod.POST)
+    public ModelAndView addRoleForPojo(RoleModel roleModel) {
+        mv.addObject("role",roleModel);
+        System.out.println(roleModel);
+        return View();
+    }
+
+    @RequestMapping(value = "/addRoleForRequestParam", method = RequestMethod.GET)
+    public ModelAndView addRoleForRequestParam() {
+        return View();
+    }
+
+    @RequestMapping(value = "/addRoleForRequestParam", method = RequestMethod.POST)
+    public ModelAndView addRoleForRequestParam(
+            @RequestParam("role_name") String roleName,
+            @RequestParam("role_note")String roleNote) {
+        mv.addObject("roleName", roleName);
+        mv.addObject("roleNote",roleNote);
+        return View();
+    }
+
+    @RequestMapping(value = "/getParamByUrl/{id}", method = RequestMethod.GET)
+    public ModelAndView getParamByUrl(@PathVariable(value = "id",required = false) Long id) {
+        mv.addObject("id:",id);
+        return View("spring/ssm/getParamByUrl");
+    }
 }
