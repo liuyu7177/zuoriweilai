@@ -24,7 +24,8 @@
                         <li class="divider"></li>
                         <li><a href="/spring/ssm/getParamByUrl/50">通过URL传递参数</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">另一个分离的链接</a></li>
+                        <li><a href="/spring/ssm/addParamByJson">通过JSON传递参数</a></li>
+                        <li><a href="/spring/ssm/redirectByJson">通过JSON传递参数,然后重定向到showRedirectInfo</a></li>
                     </ul>
                 </li>
                 <li><a href="#">SVN</a></li>

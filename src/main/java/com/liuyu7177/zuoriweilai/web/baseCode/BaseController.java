@@ -1,5 +1,7 @@
 package com.liuyu7177.zuoriweilai.web.baseCode;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,6 +14,8 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Controller
 public class BaseController {
+    public Logger logger = LoggerFactory.getLogger(this.getClass());
+
     public BaseController() {
 
     }

@@ -2,7 +2,6 @@
 <%@include file="../../common/tag.jsp" %>
 <html>
 <head>
-    <meta charset="utf-8">
     <title>新增角色表单</title>
     <%@include file="../../common/head.jsp" %>
 </head>

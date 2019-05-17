@@ -2,7 +2,7 @@
 <%@include file="../../common/tag.jsp" %>
 <html>
 <head>
-    <title>新增角色表单</title>
+    <title>试试重定向</title>
     <%@include file="../../common/head.jsp" %>
 </head>
 <body>
@@ -12,18 +12,18 @@
 
         <div class="panel-heading">
             <h3 class="panel-title">
-                新增角色By RequestParam
+                新增角色
             </h3>
         </div>
         <div class="panel-body">
-            <form role="form" action="/spring/ssm/addRoleForRequestParam" method="post">
+            <form role="form" action="/spring/ssm/redirectByJson" method="post">
                 <div class="form-group">
-                    <label for="role_name">角色名称</label>
-                    <input type="text" class="form-control" id="role_name" name="role_name" value="${roleName}" placeholder="请输入角色名称">
+                    <label for="roleName">角色名称</label>
+                    <input type="text" class="form-control" id="roleName" name="roleName" value="${roleName}" placeholder="请输入角色名称">
                 </div>
                 <div class="form-group">
-                    <label for="role_note">备注</label>
-                    <input type="text" class="form-control" id="role_note" name="role_note" value="${roleNote}" placeholder="请输入角色名称">
+                    <label for="roleNote">备注</label>
+                    <input type="text" class="form-control" id="roleNote" name="roleNote" value="${roleNote}" placeholder="请输入角色名称">
                 </div>
                 <button type="submit" class="btn btn-default">提交</button>
             </form>
