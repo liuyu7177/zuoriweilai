@@ -26,6 +26,9 @@
                         <li class="divider"></li>
                         <li><a href="/spring/ssm/addParamByJson">通过JSON传递参数</a></li>
                         <li><a href="/spring/ssm/redirectByJson">通过JSON传递参数,然后重定向到showRedirectInfo</a></li>
+                        <li><a href="/spring/ssm/testRequestAttribute">通过RequestAttribute传递参数,然后服务端跳转到showRequestAttributeValue</a></li>
+                        <li><a href="/account/setSession">session的数据操作</a></li>
+                        <li><a href="/account/setCookie">cookie的数据操作</a></li>
                     </ul>
                 </li>
                 <li><a href="#">SVN</a></li>

@@ -98,7 +98,7 @@ public class SpringMvcParamsController extends JsonBaseController {
     @ResponseBody
     public ModelAndView redirectByJson(RedirectAttributes ra, RoleParams roleParams) {
         ra.addFlashAttribute("roleParams", roleParams);
-        logger.error("roleValue",roleParams);
+        logger.error("roleValue", roleParams);
         mv.setViewName(Redirect("./showRedirectInfo"));
         return View();
     }
@@ -106,7 +106,22 @@ public class SpringMvcParamsController extends JsonBaseController {
     @RequestMapping(value = "/showRedirectInfo", method = RequestMethod.GET)
     @ResponseBody
     public JsonResult<RoleParams> showRedirectInfo(RoleParams roleParams) {
-        logger.error("roleValue",roleParams);
+        logger.error("roleValue", roleParams);
         return ApiSuccess(roleParams);
+    }
+
+    @RequestMapping(value = "/testRequestAttribute", method = RequestMethod.GET)
+    public ModelAndView testRequestAttribute() {
+        return View();
+    }
+
+    @RequestMapping(value ="showRequestAttributeValue", method = RequestMethod.GET)
+    @ResponseBody
+    public JsonResult<RoleModel> showRequestAttributeValue(@RequestAttribute("idTest") Long id)
+    {
+        RoleModel r=new RoleModel();
+        r.setRoleName(id.toString());
+        r.setRoleNote(id.toString());
+        return ApiSuccess(r);
     }
 }

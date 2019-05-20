@@ -8,6 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by liuyu7177 On 2019/5/13
@@ -45,7 +46,8 @@ public class BaseController {
      */
     public ModelAndView mv;
 
-    private HttpServletRequest request;
+    public HttpServletRequest request;
+    public  HttpServletResponse response;
 
     public HttpServletRequest getRequest() {
         return request;
@@ -65,7 +67,7 @@ public class BaseController {
 
 
     @ModelAttribute
-    public void init(HttpServletRequest request) {
+    public void init(HttpServletRequest request, HttpServletResponse response) {
         mv = new ModelAndView();
         mv.setViewName(request.getRequestURI());
     }
