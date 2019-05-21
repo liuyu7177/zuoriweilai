@@ -6,6 +6,15 @@ package com.liuyu7177.zuoriweilai.model.entity;
 public class UserInfo {
     private int userId;
     private String userName;
+    private  String note;
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
 
     public int getUserId() {
         return userId;
@@ -21,6 +30,21 @@ public class UserInfo {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public UserInfo() {
+    }
+
+    /**
+     *
+     * @param userId 用户id
+     * @param userName 用户名
+     * @param note 备注
+     */
+    public UserInfo(int userId, String userName, String note) {
+        this.userId = userId;
+        this.userName = userName;
+        this.note = note;
     }
 
     @Override

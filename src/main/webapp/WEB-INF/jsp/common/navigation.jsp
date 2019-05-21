@@ -18,6 +18,9 @@
                         SprignMVC传参Demo<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
+                        <li class="divider"></li>
+                        <li><a href="/validation/transaction">validation参数校验</a></li>
+                        <li class="divider"></li>
                         <li><a href="/spring/ssm/addRole">接收普通请求参数</a></li>
                         <li><a href="/spring/ssm/addRoleForPojo">用Pojo接收参数</a></li>
                         <li><a href="/spring/ssm/addRoleForRequestParam">使用RequestParam获取参数</a></li>
@@ -29,6 +32,7 @@
                         <li><a href="/spring/ssm/testRequestAttribute">通过RequestAttribute传递参数,然后服务端跳转到showRequestAttributeValue</a></li>
                         <li><a href="/account/setSession">session的数据操作</a></li>
                         <li><a href="/account/setCookie">cookie的数据操作</a></li>
+                        <li><a href="/exportExcel/export">导出excel</a></li>
                     </ul>
                 </li>
                 <li><a href="#">SVN</a></li>
