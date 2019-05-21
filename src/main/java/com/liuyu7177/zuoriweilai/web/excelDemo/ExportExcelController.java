@@ -26,7 +26,7 @@ public class ExportExcelController extends JsonBaseController {
     @RequestMapping(value = "/export", method = RequestMethod.GET)
     public ModelAndView export()
     {
-        ExcelView ev=new ExcelView(exportService());
+        ExcelView ev=new ExcelView("testExcelExport.xls",exportService());
         List<UserInfo> userInfoList=new ArrayList<UserInfo>();
         UserInfo u=new UserInfo(1,"liuyu7177","noteTest");
         userInfoList.add(u);
@@ -50,9 +50,9 @@ public class ExportExcelController extends JsonBaseController {
             {
                 rowIndex++;
                 Row r=sheet.createRow(rowIndex);
-                title.createCell(0).setCellValue(u.getUserId());
-                title.createCell(1).setCellValue(u.getUserName());
-                title.createCell(2).setCellValue(u.getNote());
+                r.createCell(0).setCellValue(u.getUserId());
+                r.createCell(1).setCellValue(u.getUserName());
+                r.createCell(2).setCellValue(u.getNote());
             }
         };
     }

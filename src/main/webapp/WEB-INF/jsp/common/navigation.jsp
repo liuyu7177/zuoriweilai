@@ -33,6 +33,8 @@
                         <li><a href="/account/setSession">session的数据操作</a></li>
                         <li><a href="/account/setCookie">cookie的数据操作</a></li>
                         <li><a href="/exportExcel/export">导出excel</a></li>
+                        <li><a href=" /fileUpAndDown/upload">上传文件</a></li>
+
                     </ul>
                 </li>
                 <li><a href="#">SVN</a></li>

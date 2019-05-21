@@ -12,6 +12,12 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:spring/spring-*.xml</param-value>
         </init-param>
+        <multipart-config>
+            <!-- 上传文件最大2M -->
+            <max-file-size>20971520</max-file-size>
+            <!-- 上传文件整个请求不超过4M -->
+            <max-request-size>41943040</max-request-size>
+        </multipart-config>
     </servlet>
     <servlet-mapping>
         <servlet-name>zuoriweilai-dispatcher</servlet-name>
