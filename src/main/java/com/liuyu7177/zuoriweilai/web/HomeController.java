@@ -24,4 +24,6 @@ public class HomeController  extends JsonBaseController {
     public ModelAndView index(Model model) {
         return View("index");
     }
+
+
 }

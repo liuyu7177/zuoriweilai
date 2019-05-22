@@ -1,9 +1,14 @@
 package com.liuyu7177.zuoriweilai.model.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by liuyu7177 On 2019/5/20
  */
-public class UserInfo {
+public class UserInfo implements Serializable
+{
+
+    private static final long serialVersionUID = 3558397317682600072L;
     private int userId;
     private String userName;
     private  String note;
