@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * Created by liuyu7177 On 2019/5/13
  */
 @Service
-public class  RedisTestServiceimpl implements RedisTestService {
+public class RedisTestServiceImpl implements RedisTestService {
 
     @Cacheable(value = "redisCacheManager" ,key = "'redis_userInfo_'+#id")
     public UserInfo getUserInfo(int id) {

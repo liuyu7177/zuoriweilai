@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuyu7177.zuoriweilai.dao.UserRedPacketDao">
+    <insert id="grabRedPacket" useGeneratedKeys="true" keyProperty="Id"
+            parameterType="com.liuyu7177.zuoriweilai.model.entity.UserRedPacket">
+        insert into user_red_packet(RedPacketId, UserId, Amount, GrabTime, Note)
+        VALUES (#{redPacketId}, #{userId}, #{amount}, now(), #{note})
+    </insert>
+</mapper>

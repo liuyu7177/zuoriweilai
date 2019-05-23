@@ -6,7 +6,7 @@
          http://www.springframework.org/schema/beans/spring-beans.xsd
           http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <context:property-placeholder location="classpath:*.properties"/>
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.url}"/>
@@ -70,7 +70,7 @@
         <property name="basePackage" value="com.liuyu7177.zuoriweilai.dao"/>
     </bean>
     <bean id="redisDao" class="com.liuyu7177.zuoriweilai.dao.cache.RedisDao">
-        <constructor-arg index="0" value="127.0.0.1" />
-        <constructor-arg index="1" value="6379"/>
+        <constructor-arg index="0" value="${redis.hostName}" />
+        <constructor-arg index="1" value="${redis.port}"/>
     </bean>
 </beans>

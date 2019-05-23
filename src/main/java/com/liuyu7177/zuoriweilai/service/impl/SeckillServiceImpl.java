@@ -30,7 +30,7 @@ import java.util.Map;
  * Created by liuyu7177 On 2019/5/8
  */
 @Service
-public class SeckillServiceimpl implements SeckillService {
+public class SeckillServiceImpl implements SeckillService {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired

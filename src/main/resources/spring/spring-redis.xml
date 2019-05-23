@@ -11,16 +11,17 @@
          http://www.springframework.org/schema/tx/spring-tx.xsd
          http://www.springframework.org/schema/cache
          http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
+    <context:property-placeholder location="classpath:*.properties"/>
    <cache:annotation-driven cache-manager="redisCacheManager"/>
     <bean id="redisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
-        <property name="maxIdle" value="10"></property>
-        <property name="maxTotal" value="20"></property>
-        <property name="maxWaitMillis" value="20000"></property>
+        <property name="maxIdle" value="${redis.maxIdle}"></property>
+        <property name="maxTotal" value="${redis.maxTotal}"></property>
+        <property name="maxWaitMillis" value="${redis.maxWaitMillis}"></property>
     </bean>
     <bean id="connectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
         <!--<property name="hostName" value="127.0.0.1"></property>-->
-        <property name="hostName" value="47.93.232.171"></property>
-        <property name="port" value="6379"></property>
+        <property name="hostName" value="${redis.hostName}"></property>
+        <property name="port" value="${redis.port}"></property>
         <property name="poolConfig" ref="redisPoolConfig"></property>
         <property name="usePool" value="true" />
     </bean>

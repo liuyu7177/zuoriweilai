@@ -36,7 +36,7 @@
                         <li><a href="/fileUpAndDown/upload">上传文件</a></li>
                         <li><a href="/advice/test">测试通知</a></li>
                         <li><a href="/advice/exception">测试异常</a></li>
-
+                        <li><a href="/userRedPacket/beginGrabRedPacket">抢红包</a></li>
                     </ul>
                 </li>
                 <li><a href="#">SVN</a></li>

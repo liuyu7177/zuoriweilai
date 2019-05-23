@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuyu7177.zuoriweilai.dao.RedPacketDao">
+    <select id="getRedPacket" parameterType="long" resultType="com.liuyu7177.zuoriweilai.model.entity.RedPacket">
+        select Id,
+               UserId,
+               Amount,
+               SendDate,
+               Total,
+               UnitAmount,
+               Stock,
+               Version,
+               Note
+        FROM red_packet
+        WHERE Id = #{id}
+    </select>
+    <update id="decreaseRedPacket">
+        UPDATE red_packet
+        set Stock=Stock - 1
+        WHERE Id = #{id}
+    </update>
+    <update id="decreaseRedPacketForVersion">
+        UPDATE red_packet
+        set Stock=Stock - 1,
+        version=version+1
+        WHERE Id = #{id} AND version=#{version}
+    </update>
+</mapper>
