@@ -16,6 +16,15 @@ public interface RedPacketDao {
     public RedPacket getRedPacket(Long id);
 
     /**
+     * 获取红包信息 悲观锁机制
+     * @param id
+     * @return
+     */
+    public RedPacket getRedPacketForUpdate(Long id);
+
+
+
+    /**
      * 扣減抢红包数
      * @param id
      * @return
@@ -23,7 +32,7 @@ public interface RedPacketDao {
     public int decreaseRedPacket(Long id);
 
     /**
-     * 扣減抢红包数
+     * 扣減抢红包数 乐观锁机制
      * @param id
      * @return
      */

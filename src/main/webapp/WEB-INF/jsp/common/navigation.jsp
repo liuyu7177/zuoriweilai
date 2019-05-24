@@ -19,24 +19,25 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li class="divider"></li>
-                        <li><a href="/validation/transaction">validation参数校验</a></li>
+                        <li><a href="${pageContext.request.contextPath}/validation/transaction">validation参数校验</a></li>
                         <li class="divider"></li>
-                        <li><a href="/spring/ssm/addRole">接收普通请求参数</a></li>
-                        <li><a href="/spring/ssm/addRoleForPojo">用Pojo接收参数</a></li>
-                        <li><a href="/spring/ssm/addRoleForRequestParam">使用RequestParam获取参数</a></li>
+                        <li><a href="${pageContext.request.contextPath}/spring/ssm/addRole">接收普通请求参数</a></li>
+                        <li><a href="${pageContext.request.contextPath}/spring/ssm/addRoleForPojo">用Pojo接收参数</a></li>
+                        <li><a href="${pageContext.request.contextPath}/spring/ssm/addRoleForRequestParam">使用RequestParam获取参数</a></li>
                         <li class="divider"></li>
-                        <li><a href="/spring/ssm/getParamByUrl/50">通过URL传递参数</a></li>
+                        <li><a href="${pageContext.request.contextPath}/spring/ssm/getParamByUrl/50">通过URL传递参数</a></li>
                         <li class="divider"></li>
-                        <li><a href="/spring/ssm/addParamByJson">通过JSON传递参数</a></li>
-                        <li><a href="/spring/ssm/redirectByJson">通过JSON传递参数,然后重定向到showRedirectInfo</a></li>
-                        <li><a href="/spring/ssm/testRequestAttribute">通过RequestAttribute传递参数,然后服务端跳转到showRequestAttributeValue</a></li>
-                        <li><a href="/account/setSession">session的数据操作</a></li>
-                        <li><a href="/account/setCookie">cookie的数据操作</a></li>
-                        <li><a href="/exportExcel/export">导出excel</a></li>
-                        <li><a href="/fileUpAndDown/upload">上传文件</a></li>
-                        <li><a href="/advice/test">测试通知</a></li>
-                        <li><a href="/advice/exception">测试异常</a></li>
-                        <li><a href="/userRedPacket/beginGrabRedPacket">抢红包</a></li>
+                        <li><a href="${pageContext.request.contextPath}/spring/ssm/addParamByJson">通过JSON传递参数</a></li>
+                        <li><a href="${pageContext.request.contextPath}/spring/ssm/redirectByJson">通过JSON传递参数,然后重定向到showRedirectInfo</a></li>
+                        <li><a href="${pageContext.request.contextPath}/spring/ssm/testRequestAttribute">通过RequestAttribute传递参数,然后服务端跳转到showRequestAttributeValue</a></li>
+                        <li><a href="${pageContext.request.contextPath}/account/setSession">session的数据操作</a></li>
+                        <li><a href="${pageContext.request.contextPath}/account/setCookie">cookie的数据操作</a></li>
+                        <li><a href="${pageContext.request.contextPath}/exportExcel/export">导出excel</a></li>
+                        <li><a href="${pageContext.request.contextPath}/fileUpAndDown/upload">上传文件</a></li>
+                        <li><a href="${pageContext.request.contextPath}/advice/test">测试通知</a></li>
+                        <li><a href="${pageContext.request.contextPath}/advice/exception">测试异常</a></li>
+                        <li><a href="${pageContext.request.contextPath}/userRedPacket/beginGrabRedPacket">抢红包,一人能抢多次</a></li>
+                        <li><a href="${pageContext.request.contextPath}/userRedPacketUnique/beginGrabRedPacket">抢红包,一人只能抢一次</a></li>
                     </ul>
                 </li>
                 <li><a href="#">SVN</a></li>

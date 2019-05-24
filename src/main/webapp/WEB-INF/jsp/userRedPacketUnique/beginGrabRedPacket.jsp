@@ -17,31 +17,43 @@
         </div>
         <div class="panel-body">
             <input type="button" class="btn btn-default" value="正常抢红包有超发可能"
-                   data-url="${pageContext.request.contextPath}/userRedPacket/grabRedPacket"></input>
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacket"></input>
         </div>
         <div class="panel-body">
             <input type="button" class="btn btn-default" value="正常抢红包 悲观锁机制"
-                   data-url="${pageContext.request.contextPath}/userRedPacket/grabRedPacketForUpdate"></input>
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForUpdate"></input>
         </div>
         <div class="panel-body">
             <input type="button" class="btn btn-default" value="正常抢红包 乐观锁机制"
-                   data-url="${pageContext.request.contextPath}/userRedPacket/grabRedPacketForVersion"></input>
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForVersion"></input>
         </div>
         <div class="panel-body">
             <input type="button" class="btn btn-default" value="正常抢红包 乐观锁100毫秒重入机制"
-                   data-url="${pageContext.request.contextPath}/userRedPacket/grabRedPacketForVersionAndTimeMillis"></input>
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForVersionAndTimeMillis"></input>
         </div>
         <div class="panel-body">
             <input type="button" class="btn btn-default" value="常抢红包 乐观锁3次重入机制"
-                   data-url="${pageContext.request.contextPath}/userRedPacket/grabRedPacketForVersionAndThrice"></input>
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForVersionAndThrice"></input>
         </div>
         <div class="panel-body">
             <input type="button" class="btn btn-default" value="用存储过程执行抢红包"
-                   data-url="${pageContext.request.contextPath}/userRedPacket/grabRedPacketByProcedure"></input>
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketByProcedure"></input>
         </div>
         <div class="panel-body">
-            <input type="button" class="btn btn-default" value="用redis执行抢红包"
-                   data-url="${pageContext.request.contextPath}/userRedPacket/grabRedPacketByRedis"></input>
+            <input type="button" class="btn btn-default" value="正常抢红包 调整代码顺序测试 悲观锁机制"
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForUpdateOrder"></input>
+        </div>
+        <div class="panel-body">
+            <input type="button" class="btn btn-default" value="正常抢红包 调整代码顺序测试 乐观锁机制"
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForVersionOrder"></input>
+        </div>
+        <div class="panel-body">
+            <input type="button" class="btn btn-default" value="正常抢红包 调整代码顺序测试 乐观锁100毫秒重入机制"
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForVersionAndTimeMillisOrder"></input>
+        </div>
+        <div class="panel-body">
+            <input type="button" class="btn btn-default" value="常抢红包 调整代码顺序测试 乐观锁3次重入机制"
+                   data-url="${pageContext.request.contextPath}/userRedPacketUnique/grabRedPacketForVersionAndThriceOrder"></input>
         </div>
     </div>
 </div>
@@ -50,11 +62,12 @@
 <script type="text/javascript">
     function grab(url) {
         var max = 3000;
-        var data = {
-            redPackId: 1,
-            userId: 1
-        };
+        var beginUserId=${userId};
         for (var i = 0; i < max; i++) {
+            var data = {
+                redPackId: 1,
+                userId: beginUserId+i
+            };
             $.ajax({
                 type: "post",
                 url: url,

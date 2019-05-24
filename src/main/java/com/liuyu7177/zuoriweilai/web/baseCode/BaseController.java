@@ -69,7 +69,8 @@ public class BaseController {
     @ModelAttribute
     public void init(HttpServletRequest request, HttpServletResponse response) {
         mv = new ModelAndView();
-        mv.setViewName(request.getRequestURI());
+       // mv.setViewName(request.getRequestURI());
+        mv.setViewName(request.getServletPath());
     }
 
     /**

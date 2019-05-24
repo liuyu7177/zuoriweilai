@@ -16,6 +16,19 @@
         FROM red_packet
         WHERE Id = #{id}
     </select>
+    <select id="getRedPacketForUpdate" parameterType="long" resultType="com.liuyu7177.zuoriweilai.model.entity.RedPacket">
+        select Id,
+               UserId,
+               Amount,
+               SendDate,
+               Total,
+               UnitAmount,
+               Stock,
+               Version,
+               Note
+        FROM red_packet
+        WHERE Id = #{id} FOR UPDATE
+    </select>
     <update id="decreaseRedPacket">
         UPDATE red_packet
         set Stock=Stock - 1

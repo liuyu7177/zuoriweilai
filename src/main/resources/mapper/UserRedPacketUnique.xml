@@ -2,14 +2,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.liuyu7177.zuoriweilai.dao.UserRedPacketDao">
+<mapper namespace="com.liuyu7177.zuoriweilai.dao.UserRedPacketUniqueDao">
     <insert id="grabRedPacket" useGeneratedKeys="true" keyProperty="Id"
-            parameterType="com.liuyu7177.zuoriweilai.model.entity.UserRedPacket">
-        insert into user_red_packet(RedPacketId, UserId, Amount, GrabTime, Note)
+            parameterType="com.liuyu7177.zuoriweilai.model.entity.UserRedPacketUnique">
+        insert into user_red_packet_unique(RedPacketId, UserId, Amount, GrabTime, Note)
         VALUES (#{redPacketId}, #{userId}, #{amount}, now(), #{note})
     </insert>
     <select id="grabRedPacketByProcedure" statementType="CALLABLE">
-        call grabRedPacket(
+        call grabRedPacketUnique(
                 #{redPacketId,jdbcType=BIGINT,mode=IN},
                 #{userId,jdbcType=BIGINT,mode=IN},
                 #{result,jdbcType=INTEGER,mode=OUT}
