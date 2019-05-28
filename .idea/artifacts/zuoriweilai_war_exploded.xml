@@ -7,6 +7,8 @@
           <element id="module-output" name="zuoriweilai" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate Validator-5.0.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.1" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.1" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.13" />
@@ -20,6 +22,17 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-test:4.3.24.RELEASE" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.16" />
           <element id="library" level="project" name="Maven: redis.clients:jedis:2.9.3" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.4.3" />
@@ -28,36 +41,24 @@
           <element id="library" level="project" name="Maven: io.protostuff:protostuff-runtime:1.6.0" />
           <element id="library" level="project" name="Maven: io.protostuff:protostuff-collectionschema:1.6.0" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.3" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.3.3" />
-          <element id="library" level="project" name="Maven: com.github.virtuald:curvesapi:1.04" />
-          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
-          <element id="library" level="project" name="Hibernate Validator-5.0.1" />
-          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.17" />
-          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.17" />
-          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.17" />
-          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
-          <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator:6.0.16.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.3.1.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator:6.0.16.Final" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.1.Final" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.17" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.17" />
+          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
           <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
-          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.13.22.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-keyvalue:1.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.17" />
+          <element id="library" level="project" name="Maven: com.github.virtuald:curvesapi:1.04" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-redis:1.8.22.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-keyvalue:1.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.13.22.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-oxm:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-test:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.24.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.24.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="zuoriweilai/web/Web" />

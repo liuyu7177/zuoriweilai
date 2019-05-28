@@ -9,6 +9,11 @@
 <body>
 <div class="container">
     <%@include file="common/navigation.jsp" %>
+    <footer class="footer navbar-fixed-bottom ">
+        <div class="container">
+            <a style="color:inherit;display:inline-block;margin-left:5px;" href="http://www.beian.miit.gov.cn">粤ICP备16058286号</a>
+        </div>
+    </footer>
 </div>
 </body>
 <%@include file="common/foot.jsp" %>
