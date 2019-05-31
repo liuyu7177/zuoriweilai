@@ -5,7 +5,9 @@ package com.liuyu7177.java.concurrency;
  */
 public interface IntegerInterface {
 
-    public int getValue() ;
+    public int getValue();
 
-    public void setValue(int value) ;
+    public void setValue(int value);
+
+    public int autoIncrement();
 }

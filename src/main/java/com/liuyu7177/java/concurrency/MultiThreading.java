@@ -18,7 +18,7 @@ public class MultiThreading extends Thread {
 
     public void run() {
         for (int i = 0; i < 1000; i++) {
-            integer.setValue(integer.getValue() + 1);
+            integer.autoIncrement();
         }
         System.out.println("循环执行完："+Thread.currentThread().getName()+" "+integer.getValue());
     }

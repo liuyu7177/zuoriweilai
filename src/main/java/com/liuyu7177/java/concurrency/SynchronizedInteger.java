@@ -8,10 +8,14 @@ public class SynchronizedInteger implements IntegerInterface {
     private int value;
 
     public synchronized int getValue() {
-            return value;
+        return value;
     }
 
     public synchronized void setValue(int value) {
-            this.value = value;
+        this.value = value;
+    }
+
+    public synchronized int autoIncrement() {
+        return value = value + 1;
     }
 }
