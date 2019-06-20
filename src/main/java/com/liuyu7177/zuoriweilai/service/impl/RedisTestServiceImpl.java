@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.service.impl;
 
-import com.liuyu7177.zuoriweilai.model.entity.UserInfo;
+import com.liuyu7177.zuoriweilai.model.entitys.UserInfo;
 import com.liuyu7177.zuoriweilai.service.RedisTestService;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;

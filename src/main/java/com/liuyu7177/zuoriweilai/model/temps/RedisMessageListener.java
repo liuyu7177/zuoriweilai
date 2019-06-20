@@ -1,4 +1,4 @@
-package com.liuyu7177.zuoriweilai.model.temp;
+package com.liuyu7177.zuoriweilai.model.temps;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.Message;

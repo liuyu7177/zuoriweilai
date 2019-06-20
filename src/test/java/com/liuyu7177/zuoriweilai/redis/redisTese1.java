@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.redis;
 
-import com.liuyu7177.zuoriweilai.model.entity.UserInfo;
+import com.liuyu7177.zuoriweilai.model.entitys.UserInfo;
 import com.liuyu7177.zuoriweilai.service.RedisTestService;
 import org.junit.Ignore;
 import org.junit.Test;

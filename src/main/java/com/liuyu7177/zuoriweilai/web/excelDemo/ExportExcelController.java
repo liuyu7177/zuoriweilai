@@ -2,7 +2,7 @@ package com.liuyu7177.zuoriweilai.web.excelDemo;
 
 import com.liuyu7177.zuoriweilai.framework.service.ExcelExportService;
 import com.liuyu7177.zuoriweilai.framework.web.view.ExcelView;
-import com.liuyu7177.zuoriweilai.model.entity.UserInfo;
+import com.liuyu7177.zuoriweilai.model.entitys.UserInfo;
 import com.liuyu7177.zuoriweilai.web.baseCode.JsonBaseController;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;

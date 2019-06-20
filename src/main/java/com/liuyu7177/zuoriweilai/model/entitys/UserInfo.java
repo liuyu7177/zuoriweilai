@@ -1,4 +1,4 @@
-package com.liuyu7177.zuoriweilai.model.entity;
+package com.liuyu7177.zuoriweilai.model.entitys;
 
 import java.io.Serializable;
 

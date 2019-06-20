@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.dao;
 
-import com.liuyu7177.zuoriweilai.model.entity.SuccessKilled;
+import com.liuyu7177.zuoriweilai.model.entitys.SuccessKilled;
 import org.apache.ibatis.annotations.Param;
 
 /**

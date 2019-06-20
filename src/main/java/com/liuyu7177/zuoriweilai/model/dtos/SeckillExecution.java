@@ -1,7 +1,7 @@
-package com.liuyu7177.zuoriweilai.model.dto;
+package com.liuyu7177.zuoriweilai.model.dtos;
 
 
-import com.liuyu7177.zuoriweilai.model.entity.SuccessKilled;
+import com.liuyu7177.zuoriweilai.model.entitys.SuccessKilled;
 import com.liuyu7177.zuoriweilai.model.enums.SeckillStateEnum;
 
 /**

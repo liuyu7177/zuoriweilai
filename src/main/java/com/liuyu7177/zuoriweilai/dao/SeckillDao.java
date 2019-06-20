@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.dao;
 
-import com.liuyu7177.zuoriweilai.model.entity.Seckill;
+import com.liuyu7177.zuoriweilai.model.entitys.Seckill;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liuyu7177.zuoriweilai.dao.UserRedPacketUniqueDao">
     <insert id="grabRedPacket" useGeneratedKeys="true" keyProperty="Id"
-            parameterType="com.liuyu7177.zuoriweilai.model.entity.UserRedPacketUnique">
+            parameterType="com.liuyu7177.zuoriweilai.model.entitys.UserRedPacketUnique">
         insert into user_red_packet_unique(RedPacketId, UserId, Amount, GrabTime, Note)
         VALUES (#{redPacketId}, #{userId}, #{amount}, now(), #{note})
     </insert>

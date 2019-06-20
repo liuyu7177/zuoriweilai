@@ -2,8 +2,8 @@ package com.liuyu7177.zuoriweilai.service.impl;
 
 import com.liuyu7177.zuoriweilai.dao.RedPacketDao;
 import com.liuyu7177.zuoriweilai.dao.UserRedPacketDao;
-import com.liuyu7177.zuoriweilai.model.entity.RedPacket;
-import com.liuyu7177.zuoriweilai.model.entity.UserRedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.RedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.UserRedPacket;
 import com.liuyu7177.zuoriweilai.service.RedisRedPacketService;
 import com.liuyu7177.zuoriweilai.service.UserRedPacketService;
 import org.apache.commons.collections4.MapUtils;

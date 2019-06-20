@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liuyu7177.zuoriweilai.dao.RedPacketDao">
-    <select id="getRedPacket" parameterType="long" resultType="com.liuyu7177.zuoriweilai.model.entity.RedPacket">
+    <select id="getRedPacket" parameterType="long" resultType="com.liuyu7177.zuoriweilai.model.entitys.RedPacket">
         select Id,
                UserId,
                Amount,
@@ -16,7 +16,7 @@
         FROM red_packet
         WHERE Id = #{id}
     </select>
-    <select id="getRedPacketForUpdate" parameterType="long" resultType="com.liuyu7177.zuoriweilai.model.entity.RedPacket">
+    <select id="getRedPacketForUpdate" parameterType="long" resultType="com.liuyu7177.zuoriweilai.model.entitys.RedPacket">
         select Id,
                UserId,
                Amount,

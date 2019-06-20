@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.dao.cache;
 
-import com.liuyu7177.zuoriweilai.model.entity.Seckill;
+import com.liuyu7177.zuoriweilai.model.entitys.Seckill;
 import io.protostuff.LinkedBuffer;
 import io.protostuff.ProtostuffIOUtil;
 import io.protostuff.runtime.RuntimeSchema;

@@ -1,7 +1,7 @@
 package com.liuyu7177.zuoriweilai.web.RedPacket;
 
 import com.liuyu7177.zuoriweilai.framework.web.JsonResult;
-import com.liuyu7177.zuoriweilai.model.entity.RedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.RedPacket;
 import com.liuyu7177.zuoriweilai.service.RedPacketService;
 import com.liuyu7177.zuoriweilai.service.UserRedPacketUniqueService;
 import com.liuyu7177.zuoriweilai.web.baseCode.JsonBaseController;

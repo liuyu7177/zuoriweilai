@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.service;
 
-import com.liuyu7177.zuoriweilai.model.entity.RedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.RedPacket;
 
 /**
  * Created by liuyu7177 On 2019/5/22

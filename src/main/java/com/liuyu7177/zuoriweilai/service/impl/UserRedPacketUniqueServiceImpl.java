@@ -2,8 +2,8 @@ package com.liuyu7177.zuoriweilai.service.impl;
 
 import com.liuyu7177.zuoriweilai.dao.RedPacketDao;
 import com.liuyu7177.zuoriweilai.dao.UserRedPacketUniqueDao;
-import com.liuyu7177.zuoriweilai.model.entity.RedPacket;
-import com.liuyu7177.zuoriweilai.model.entity.UserRedPacketUnique;
+import com.liuyu7177.zuoriweilai.model.entitys.RedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.UserRedPacketUnique;
 import com.liuyu7177.zuoriweilai.service.UserRedPacketUniqueService;
 import org.apache.commons.collections4.MapUtils;
 import org.springframework.beans.factory.annotation.Autowired;

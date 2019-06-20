@@ -3,9 +3,9 @@ package com.liuyu7177.zuoriweilai.service;
 import com.liuyu7177.zuoriweilai.framework.exceptions.RepeatKillException;
 import com.liuyu7177.zuoriweilai.framework.exceptions.SeckillCloseException;
 import com.liuyu7177.zuoriweilai.framework.exceptions.SeckillException;
-import com.liuyu7177.zuoriweilai.model.dto.Exposer;
-import com.liuyu7177.zuoriweilai.model.dto.SeckillExecution;
-import com.liuyu7177.zuoriweilai.model.entity.Seckill;
+import com.liuyu7177.zuoriweilai.model.dtos.Exposer;
+import com.liuyu7177.zuoriweilai.model.dtos.SeckillExecution;
+import com.liuyu7177.zuoriweilai.model.entitys.Seckill;
 
 import java.util.List;
 

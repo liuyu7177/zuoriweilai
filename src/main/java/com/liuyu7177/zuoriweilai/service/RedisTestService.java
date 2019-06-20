@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.service;
 
-import com.liuyu7177.zuoriweilai.model.entity.UserInfo;
+import com.liuyu7177.zuoriweilai.model.entitys.UserInfo;
 
 /**
  * Created by liuyu7177 On 2019/5/13

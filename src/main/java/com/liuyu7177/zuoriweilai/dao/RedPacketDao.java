@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.dao;
 
-import com.liuyu7177.zuoriweilai.model.entity.RedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.RedPacket;
 import org.apache.ibatis.annotations.Param;
 
 /**

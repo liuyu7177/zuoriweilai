@@ -1,4 +1,4 @@
-<%@ page import="com.liuyu7177.zuoriweilai.model.entity.UserInfo" %>
+<%@ page import="com.liuyu7177.zuoriweilai.model.entitys.UserInfo" %>
 <%@ page contentType="text/html;charset=utf-8" language="java" %>
 <%@include file="../common/tag.jsp" %>
 <html>

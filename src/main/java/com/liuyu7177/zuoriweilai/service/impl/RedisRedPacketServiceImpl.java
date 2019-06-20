@@ -1,7 +1,7 @@
 package com.liuyu7177.zuoriweilai.service.impl;
 
 import com.liuyu7177.zuoriweilai.framework.utils.DateUtils;
-import com.liuyu7177.zuoriweilai.model.entity.UserRedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.UserRedPacket;
 import com.liuyu7177.zuoriweilai.service.RedisRedPacketService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

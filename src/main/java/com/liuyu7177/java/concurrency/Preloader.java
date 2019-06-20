@@ -1,10 +1,8 @@
 package com.liuyu7177.java.concurrency;
 
-import com.liuyu7177.zuoriweilai.model.entity.UserInfo;
+import com.liuyu7177.zuoriweilai.model.entitys.UserInfo;
 
 import java.util.concurrent.Callable;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.FutureTask;
 
 /**

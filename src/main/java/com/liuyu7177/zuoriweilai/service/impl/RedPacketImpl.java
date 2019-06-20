@@ -1,7 +1,7 @@
 package com.liuyu7177.zuoriweilai.service.impl;
 
 import com.liuyu7177.zuoriweilai.dao.RedPacketDao;
-import com.liuyu7177.zuoriweilai.model.entity.RedPacket;
+import com.liuyu7177.zuoriweilai.model.entitys.RedPacket;
 import com.liuyu7177.zuoriweilai.service.RedPacketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.liuyu7177.zuoriweilai.dao;
 
-import com.liuyu7177.zuoriweilai.model.entity.UserRedPacketUnique;
+import com.liuyu7177.zuoriweilai.model.entitys.UserRedPacketUnique;
 
 import java.util.Map;
 
