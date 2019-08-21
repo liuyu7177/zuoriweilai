@@ -21,4 +21,8 @@ public class DateUtils {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//显示2017-10-27格式
         return sdf.format(date);
     }
+    public static String GetDateTimeNow(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//显示2017-10-27格式
+        return sdf.format(new Date());
+    }
 }
