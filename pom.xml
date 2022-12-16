@@ -9,7 +9,7 @@
     <packaging>war</packaging>
     <properties>
         <poi.version>3.17</poi.version>
-        <spring.version>4.3.24.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
     </properties>
     <dependencies>
         <dependency>
